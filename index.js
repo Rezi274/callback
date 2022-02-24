@@ -3,11 +3,11 @@ function getData(data){
 }
 function displayProducts(data) {
     data.data.products.forEach(data => displayProduct(product));
-
+}
 function displayTableData(data) {
     const table = document.createElement("table");
     table.setAttribute("border", 1);
-
+}
     let index = 0;
     data.data.data.forEach(product => {
     table.insertRow(index).insertCell(0).innerText = product.name;
@@ -19,6 +19,7 @@ function displayTableData(data) {
 
 function buttonClick() {
     getProducts(document.getElementById("id").value);
+}
 
 function getData(url,cb){   
     let xhr= new XMLHttpRequest();
