@@ -34,5 +34,5 @@ function getData(url,cb){
 }
 
 const data = getData ("https://jsonplaceholder.typicode.com/users",function (data){
-    console.lohg(data);
+    console.log(data);
 });
